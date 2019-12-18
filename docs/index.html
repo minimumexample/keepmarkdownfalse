@@ -89,13 +89,16 @@
 <p>The contents of <code>_bookdown.yml</code> are:</p>
 <pre><code>output_dir: docs
 new_session: yes
-delete_merged_file: true</code></pre>
+delete_merged_file: true
+edit: https://github.com/minimumexample/keepmarkdownfalse/edit/master/%s
+view: https://github.com/minimumexample/keepmarkdownfalse/blob/master/%s</code></pre>
 <p>and the contents of <code>_output.yml</code> are:</p>
 <pre><code>bookdown::gitbook:
   keep_md: false</code></pre>
 <p>yet <a href="https://github.com/minimumexample/keepmarkdownfalse/blob/master/docs/index.md"><code>docs/index.md</code></a> remains after rendering.</p>
 <p>The same is the case with</p>
 <p><code>bookdown::render_book(&quot;index.Rmd&quot;, new_session = TRUE, clean = TRUE)</code></p>
+<p>In addition, despite including <code>delete_merged_file: true</code>, <a href="https://github.com/minimumexample/keepmarkdownfalse/blob/master/_main.rds"><code>_main.rds</code></a> remains after rendering.</p>
 
 </div>
             </section>
@@ -135,15 +138,15 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/minimumexample/keepmarkdownfalse/edit/master/index.Rmd",
+"text": "Edit"
 },
 "history": {
 "link": null,
 "text": null
 },
 "view": {
-"link": null,
+"link": "https://github.com/minimumexample/keepmarkdownfalse/blob/master/index.Rmd",
 "text": null
 },
 "download": null,
