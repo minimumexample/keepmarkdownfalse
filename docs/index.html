@@ -86,19 +86,20 @@
 </div>
 <div id="new_session-yes-example" class="section level1">
 <h1><span class="header-section-number">1</span> <code>new_session: yes</code> example</h1>
-<p>The contents of <code>_bookdown.yml</code> are:</p>
+<p>I am using <code>new_session: yes</code> for the <a href="https://bookdown.org/yihui/bookdown/new-session.html">“Knit and Merge” (K-M) approach</a> to book rendering. I do not want to keep <code>.md</code> files but I can’t find a way to get rid of them.</p>
+<p>The contents of the <a href="https://github.com/minimumexample/keepmarkdownfalse/blob/master/_bookdown.yml"><code>_bookdown.yml</code></a> file are:</p>
 <pre><code>output_dir: docs
 new_session: yes
 delete_merged_file: true
 edit: https://github.com/minimumexample/keepmarkdownfalse/edit/master/%s
 view: https://github.com/minimumexample/keepmarkdownfalse/blob/master/%s</code></pre>
-<p>and the contents of <code>_output.yml</code> are:</p>
+<p>and the contents of the <a href="https://github.com/minimumexample/keepmarkdownfalse/blob/master/_output.yml"><code>_output.yml</code></a> file are:</p>
 <pre><code>bookdown::gitbook:
   keep_md: false</code></pre>
 <p>yet <a href="https://github.com/minimumexample/keepmarkdownfalse/blob/master/docs/index.md"><code>docs/index.md</code></a> remains after rendering.</p>
+<p>(<code>keep_md: false</code> shouldn’t be necessary but tried it just in case. It didn’t help.)</p>
 <p>The same is the case with</p>
 <p><code>bookdown::render_book(&quot;index.Rmd&quot;, new_session = TRUE, clean = TRUE)</code></p>
-<p>In addition, despite including <code>delete_merged_file: true</code>, <a href="https://github.com/minimumexample/keepmarkdownfalse/blob/master/_main.rds"><code>_main.rds</code></a> remains after rendering.</p>
 
 </div>
             </section>
