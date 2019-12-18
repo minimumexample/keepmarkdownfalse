@@ -16,7 +16,7 @@ and the contents of `_output.yml` are:
 writeLines(readLines("_output.yml"))
 ```
 
-yet [`_book/index.md`](_book/index.md) remains after rendering.
+yet [`docs/index.md`](docs/index.md) remains after rendering.
 
 The same is the case with
 

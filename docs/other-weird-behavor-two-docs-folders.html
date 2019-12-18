@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Can’t get rid of .md files</title>
-  <meta name="description" content="Can’t get rid of .md files" />
+  <title>2 Other weird behavor: two docs folders | Can’t get rid of .md files</title>
+  <meta name="description" content="2 Other weird behavor: two docs folders | Can’t get rid of .md files" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Can’t get rid of .md files" />
+  <meta property="og:title" content="2 Other weird behavor: two docs folders | Can’t get rid of .md files" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Can’t get rid of .md files" />
+  <meta name="twitter:title" content="2 Other weird behavor: two docs folders | Can’t get rid of .md files" />
   
   
   
@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="index.html"/>
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -63,7 +63,8 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="#new_session-yes-example"><i class="fa fa-check"></i><b>1</b> <code>new_session: yes</code> example</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> <code>new_session: yes</code> example</a></li>
+<li class="chapter" data-level="2" data-path="other-weird-behavor-two-docs-folders.html"><a href="other-weird-behavor-two-docs-folders.html"><i class="fa fa-check"></i><b>2</b> Other weird behavor: two docs folders</a></li>
 </ul>
 
       </nav>
@@ -81,19 +82,10 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Can’t get rid of .md files</h1>
-</div>
-<div id="new_session-yes-example" class="section level1">
-<h1><span class="header-section-number">1</span> <code>new_session: yes</code> example</h1>
-<p>The contents of <code>_bookdown.yml</code> are:</p>
-<pre><code>new_session: yes</code></pre>
-<p>and the contents of <code>_output.yml</code> are:</p>
-<pre><code>bookdown::gitbook:
-  keep_md: false</code></pre>
-<p>yet <a href="_book/index.md"><code>_book/index.md</code></a> remains after rendering.</p>
-<p>The same is the case with</p>
-<p><code>bookdown::render_book(&quot;index.Rmd&quot;, new_session = TRUE, clean = TRUE)</code></p>
+<div id="other-weird-behavor-two-docs-folders" class="section level1">
+<h1><span class="header-section-number">2</span> Other weird behavor: two docs folders</h1>
+<p>When I render with <code>bookdown::render_book(&quot;index.Rmd&quot;)</code> a <code>docs</code> folder is created. When I render again, a <em>second</em> <code>docs</code> folder is created within the first one:</p>
+<p><a href="docs/"><code>docs/docs</code></a></p>
 
 </div>
             </section>
@@ -101,7 +93,7 @@
           </div>
         </div>
       </div>
-
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>

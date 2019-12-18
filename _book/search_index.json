@@ -1,3 +1,0 @@
-[
-["index.html", "Can’t get rid of .md files 1 new_session: yes example", " Can’t get rid of .md files 1 new_session: yes example The contents of _bookdown.yml are: new_session: yes and the contents of _output.yml are: bookdown::gitbook: keep_md: false yet _book/index.md remains after rendering. The same is the case with bookdown::render_book(&quot;index.Rmd&quot;, new_session = TRUE, clean = TRUE) "]
-]
