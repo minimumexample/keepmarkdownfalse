@@ -1,0 +1,2 @@
+bookdown::gitbook:
+  keep_md: false
