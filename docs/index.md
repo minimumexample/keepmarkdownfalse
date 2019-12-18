@@ -21,7 +21,7 @@ bookdown::gitbook:
   keep_md: false
 ```
 
-yet [`docs/index.md`](docs/index.md) remains after rendering.
+yet [`docs/index.md`](https://github.com/minimumexample/keepmarkdownfalse/blob/master/docs/index.md) remains after rendering.
 
 The same is the case with
 
